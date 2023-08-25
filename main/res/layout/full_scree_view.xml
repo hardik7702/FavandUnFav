@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullScreeView">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/fullImg"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/fullId"
+            android:layout_below="@+id/fullImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_15sdp"
+            android:text="123"/>
+
+        <TextView
+            android:id="@+id/fullTitle"
+            android:layout_below="@+id/fullId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="ajdbhibahbs"
+            android:layout_centerHorizontal="true"
+           />
+
+        <RelativeLayout
+            android:id="@+id/rr1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fullTitle"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv_notFav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/fav_line" />
+
+            <ImageView
+                android:id="@+id/iv_Fav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:padding="@dimen/_8sdp"
+                android:foreground="?selectableItemBackground"
+                android:src="@drawable/fav_fill"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
